@@ -16,7 +16,17 @@ class Network:
             self.reactions["R1"]["in"] = ["A"]
             self.reactions["R1"]["out"] = ["B"]
             self.reactions["R1"]["cat"] = ["D"]
+            # Let's say the reaction R2 is under consideration
+            self.reactions["R2"] = {}
+            self.reactions["R2"]["in"] = ["C"]
+            self.reactions["R2"]["out"] = ["D"]
+            self.reactions["R2"]["cat"] = ["B"]
         ACS_file.close()
+    # Hordijk and Steel (2004)
+    def RAF(self):
+        pass
+    def ComputeClosure(self):
+        pass
 
 
 
